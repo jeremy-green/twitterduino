@@ -48,7 +48,7 @@ function sendLatestTweet($text) {
 function getLatestTweet()
 {
   $url = 'https://api.twitter.com/1.1/search/tweets.json';
-  $getfield = '?q=%23walkingdead&count=1';
+  $getfield = '?q=%23<HASHTAG>&count=1';
   $requestMethod = 'GET';
   $settings = array(
     'oauth_access_token' => 'YOUR_OAUTH_ACCESS_TOKEN',
